@@ -1,7 +1,6 @@
 {% extends "layout.html" %}
 
 {% block title %}Solar Savings Calculator{% endblock %}
-{% block body %}
 {% block content %}
 <form action="{{ url_for('calculate') }}" method="post">
     <div class="mb-3">
@@ -22,6 +21,4 @@
 <div class="mt-4 text-center">
     <a href="{{ url_for('history') }}" class="btn btn-outline-secondary">View Calculation History</a>
 </div>
-{% endblock %}
-
 {% endblock %}
