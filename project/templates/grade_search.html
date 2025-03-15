@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search by Grade
+{% endblock %}
+
+{% block body %}
+    <form action="/grade_search" method="post">
+        <div>
+            <select name="grade" id="grade">
+                <option value="" disabled selected>Grade</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+{% endblock %}
