@@ -34,7 +34,7 @@ SOLAR_SPECS = {
 }
 
 sol_60 = SOLAR_SPECS["60 Cell"]["energy KWH"]
-print(SOLAR_SPECS)
+# print(SOLAR_SPECS)
 # Diesel Generators
 DIESEL_GENERATOR_SPECS = {
     "Small": {"size": [6.9,  3.94, 4.36], "energy KWH": 75, "litres per hour": 27, "cost": 62288},

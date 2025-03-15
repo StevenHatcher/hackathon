@@ -14,7 +14,21 @@
         <div class="form-text">You can find this information on your electricity bill.</div>
     </div>
     <div class="d-grid gap-2">
-        <button type="submit" class="btn btn-primary btn-lg">Calculate Savings</button>
+
+        <button type="submit" class="btn btn-primary btn-lg">Calculate Residential Savings</button>
+    </div>
+    <div class="mb-3">
+        <label for="chooseBuilding" class="form-label"> Or Select any university building</label>
+    <div class="form-check">
+        {% for key, value in panel_types.items()%}
+        <input class="form-check-input" type="checkbox" name="panel_types" value="{{panel_types[key][value]}}">
+        <label for="{{key}}">{{key}}</label>
+        {% endfor %}
+    </div>
+    <div class="d-grid gap-2">
+
+        <button type="submit" class="btn btn-primary btn-lg">Calculate University Savings</button>
+    </div>
     </div>
 </form>
 

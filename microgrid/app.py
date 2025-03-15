@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, send_file
 import sqlite3
+import pandas as pd
+import ast
 import csv
 import io
 from datetime import datetime
@@ -63,17 +65,24 @@ def calculate_solar_savings(monthly_kwh):
 # Routes
 @app.route("/")
 def index():
-    return render_template("index.html")
+    buildings = university_init()
+    return render_template("index.html", panel_types=buildings)
 
 
 @app.route("/calculate", methods=["POST"])
 def calculate():
+    buildings = university_init()
     try:
-        monthly_kwh = float(request.form["monthly_kwh"])
-        if monthly_kwh <= 0:
-            flash("Please enter a positive value for monthly kWh usage.")
-            return redirect(url_for("index"))
-
+        monthly_kwh = request.form["monthly_kwh"]
+        building_choice = str(request.form["chooseBuilding"])
+        if monthly_kwh is not None:
+            monthly_kwh = float(monthly_kwh)
+            if monthly_kwh < 0:
+                monthly_kwh = 0
+        if monthly_kwh is None:
+            if building_choice is not None:
+                monthly_kwh = buildings[building_choice]['electrical'] * constants.GIGAJOULE_KWH
+        
         results = calculate_solar_savings(monthly_kwh)
 
         # Save to database
@@ -83,6 +92,7 @@ def calculate():
             results["monthly_savings"],
             results["annual_savings"],
         )
+        
 
         return render_template(
             "results.html", results=results, cost_per_kwh=COST_PER_KWH
@@ -154,6 +164,45 @@ def export():
         flash(f"Error exporting data: {str(e)}")
         return redirect(url_for("history"))
 
+def university_init():
+    # Read the CSV file
+    csv_file_path = "uregina_dashboard/building_consumption.csv"
+    df = pd.read_csv(csv_file_path)
+
+    # Initialize the dictionary to store building usage data
+    building_usage = {}
+
+    # Columns to process
+    columns = ["cooling", "heating", "electrical"]
+
+    # Process each building
+    for building_index, row in df.iterrows():
+        building_code = row["building_code"]
+        temp = []
+
+        # Process each energy type (cooling, heating, electrical)
+        for item in columns:
+            # The data is stored as a string representation of a list
+            # Convert it to an actual list of values
+            try:
+                # Using ast.literal_eval to safely convert string to list
+                values = ast.literal_eval(row[item])
+
+                # Calculate average value
+                if values and len(values) > 0:
+                    avg_value = sum(values) / len(values)
+                else:
+                    avg_value = 0
+
+                # Add to temporary list
+                temp.append({item: avg_value})
+            except (ValueError, SyntaxError) as e:
+                print(f"Error processing {item} for {building_code}: {e}")
+                temp.append({item: 0})  # Default to 0 if there's an error
+
+        # Add this building's data to the result dictionary
+        building_usage[building_code] = temp
+    return building_usage
 
 if __name__ == "__main__":
     app.run(debug=True)
