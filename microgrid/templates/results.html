@@ -1,0 +1,49 @@
+{% extends "layout.html" %}
+
+{% block title %}Solar Savings Results{% endblock %}
+
+{% block content %}
+<div class="card mb-4">
+    <div class="card-header bg-primary text-white">
+        <h3 class="mb-0">Your Energy Profile</h3>
+    </div>
+    <div class="card-body">
+        <p><strong>Monthly Energy Consumption:</strong> {{ results.monthly_kwh }} kWh</p>
+        <p><strong>Current Electricity Rate:</strong> ${{ cost_per_kwh }} per kWh</p>
+        <p><strong>Current Monthly Electricity Cost:</strong> ${{ "%.2f"|format(results.monthly_kwh * cost_per_kwh) }}</p>
+    </div>
+</div>
+
+<div class="card mb-4">
+    <div class="card-header bg-success text-white">
+        <h3 class="mb-0">Recommended Solar Setup</h3>
+    </div>
+    <div class="card-body">
+        <p><strong>Recommended Number of Solar Panels:</strong> {{ results.panels_needed }}</p>
+        <p><strong>Estimated Monthly Solar Production:</strong> {{ results.total_solar_output }} kWh</p>
+        <p><strong>Percentage of Bill Offset:</strong> {{ "%.1f"|format((results.total_solar_output / results.monthly_kwh) * 100) }}%</p>
+    </div>
+</div>
+
+<div class="savings-highlight">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="text-center">
+                <h4>Monthly Savings</h4>
+                <h2 class="text-success">${{ "%.2f"|format(results.monthly_savings) }}</h2>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="text-center">
+                <h4>Annual Savings</h4>
+                <h2 class="text-success">${{ "%.2f"|format(results.annual_savings) }}</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-4 text-center">
+    <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">Calculate Again</a>
+    <a href="{{ url_for('history') }}" class="btn btn-primary">View Calculation History</a>
+</div>
+{% endblock %}

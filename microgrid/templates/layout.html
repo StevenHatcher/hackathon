@@ -3,55 +3,12 @@
 
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Campbell Extra Curricular: {% block title %}{% endblock %}</title>
+        <title>Microgrid Calculator: {% block title %}{% endblock %}</title>
         <link href="/static/styles.css" rel="stylesheet">
         {% block head %}{% endblock %}
 
     </head>
+<!-------------------banner? menu?------------------------>
+    {% block body %}{% endblock}
 
-    <body>
-        <table style="width: fit-content" style="border-collapse: collapse; border: none;" cellspacing="0" cellpadding="0">
-            <tr style="background-color: #4caf50;">
-                <td style="border-bottom: none; background-color: #FFFFFF;">
-                    <a href="/">
-                        <img src="{{ url_for('static', filename='Images/Campbell_small.jpg') }}" alt="Campbell logo" style="height: 56px; width: 56px;">
-                    </a>
-                </td>
-                <td style="border-bottom: none;">
-                    <div class="dropdown">
-                        <button onclick="add_dropDown()" class="dropbtn">Add</button>
-                        <div id="addDropdown" class="dropdown-content">
-                            <a href="/add">Add Student Record</a>
-                            <a href="/activity">Add Activity</a>
-                            <a href="/team">Add Records by Group</a>
-                        </div>
-                    </td>
-                    <td style="border-bottom: none;">
-                        <div class="dropdown">
-                            <button onclick="dropDown()" class="dropbtn">Search</button>
-                            <div id="searchDropdown" class="dropdown-content">
-                                <a href="/student_search">Student</a>
-                                <a href="/grade_search">Grade</a>
-                                <a href="/activity_search">Activity</a>
-                                <a href="/points_search">Points</a>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                {% block body %}{% endblock %}
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-                </script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js">
-                </script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js">
-                </script>
-                <script src="{{url_for('static', filename='js/pdf.js')}}"></script>
-                <script src="{{url_for('static', filename='js/layout.js')}}"></script>
-            </body>
-
-        </html>
+    <!------Javascript Code here?------------->

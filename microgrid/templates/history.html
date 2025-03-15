@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}Calculation History{% endblock %}
+
+{% block subheader %}Review all your previous solar savings calculations{% endblock %}
+
+{% block container_class %}col-md-10 offset-md-1{% endblock %}
+
+{% block content %}
+<div class="mb-3 d-flex justify-content-between">
+    <a href="{{ url_for('index') }}" class="btn btn-outline-secondary">Back to Calculator</a>
+    <a href="{{ url_for('export') }}" class="btn btn-success">Export to CSV</a>
+</div>
+
+{% if calculations %}
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>Date</th>
+                    <th>Monthly Usage (kWh)</th>
+                    <th>Panels Needed</th>
+                    <th>Monthly Savings</th>
+                    <th>Annual Savings</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for calc in calculations %}
+                <tr>
+                    <td>{{ calc.calculation_date }}</td>
+                    <td>{{ calc.monthly_kwh }} kWh</td>
+                    <td>{{ calc.panels_needed }}</td>
+                    <td>${{ "%.2f"|format(calc.monthly_savings) }}</td>
+                    <td>${{ "%.2f"|format(calc.annual_savings) }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% else %}
+    <div class="alert alert-info">No calculations found. Try calculating some savings first!</div>
+{% endif %}
+{% endblock %}

@@ -1,10 +1,25 @@
 {% extends "layout.html" %}
 
-{% block title %}
-    Home
-{% endblock %}
+{% block title %}Solar Savings Calculator{% endblock %}
 
-{% block body %}
-    <img src="{{url_for('static', filename='Images/Campbell_logo.png')}}" alt="Campbell logo">
+{% block content %}
+<form action="{{ url_for('calculate') }}" method="post">
+    <div class="mb-3">
+        <label for="monthly_kwh" class="form-label">
+            <strong>How many kilowatt-hours (kWh) did you use last month?</strong>
+        </label>
+        <div class="input-group">
+            <input type="number" step="0.01" min="0" class="form-control" id="monthly_kwh" name="monthly_kwh" required placeholder="e.g. 800">
+            <span class="input-group-text">kWh</span>
+        </div>
+        <div class="form-text">You can find this information on your electricity bill.</div>
+    </div>
+    <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-primary btn-lg">Calculate Savings</button>
+    </div>
+</form>
 
+<div class="mt-4 text-center">
+    <a href="{{ url_for('history') }}" class="btn btn-outline-secondary">View Calculation History</a>
+</div>
 {% endblock %}
