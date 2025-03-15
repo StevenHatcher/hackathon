@@ -30,7 +30,7 @@ SOLAR_SPECS = {
 DIESEL_GENERATOR_SPECS = {
     {"Small": {"size": [6.9,  3.94, 4.36], "energy KWH": 75, "litres per hour": 27, "cost": 62288}},
     {"Medium": {"size": [15.4, 7.2, 7.9], "energy KWH": 375, "litres per hour": 105, "cost": 244230}},
-    {"Large": {"size": [16.8, 7.3, 9.8], "energy KWH": 825, "litres per hour": 105, "cost": 415910}}
+    {"Industrial": {"size": [16.8, 7.3, 9.8], "energy KWH": 825, "litres per hour": 105, "cost": 415910}}
 }
 
 # Turbines
