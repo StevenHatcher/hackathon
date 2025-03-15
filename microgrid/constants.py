@@ -34,7 +34,7 @@ DIESEL_GENERATOR_SPECS = {
 
 # Turbines
 WIND_SPECS = {
-    {"Small": {"size": [3, 3, 50], "energy KWH": 2.45, "cost": 64000}},
-    {"Medium": {"size": [3, 3, 60], "energy KWH": 4.11, "cost": 100000}},
-    {"Industrial": {"size": [?, ?, 180], "energy KWH": 800, "cost": 1860217}}
+    {"Small": {"size": [3.2, 3.2, 50], "energy KWH": 2.45, "cost": 64000}},
+    {"Medium": {"size": [3.2, 3.2, 60], "energy KWH": 4.11, "cost": 100000}},
+    {"Industrial": {"size": [14.8, 14.8, 180], "energy KWH": 800, "cost": 1860217}}
 }
