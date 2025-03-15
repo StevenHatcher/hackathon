@@ -1,0 +1,2925 @@
+{
+  "overview": {
+    "success": true,
+    "status": 200,
+    "data": {
+      "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+      "buildings": {
+        "ck": {
+          "cooling": 16.65,
+          "heating": 372,
+          "electrical": 177.91,
+          "total": 566.56
+        },
+        "ah": {
+          "cooling": 0,
+          "heating": 299.47,
+          "electrical": 169.84,
+          "total": 469.31
+        },
+        "rc": {
+          "cooling": 0.03,
+          "heating": 310,
+          "electrical": 152.57,
+          "total": 462.6
+        },
+        "lb": {
+          "cooling": 0.56,
+          "heating": 312.42,
+          "electrical": 118.58,
+          "total": 431.56
+        },
+        "pawa": {
+          "cooling": 17.61,
+          "heating": 250.79,
+          "electrical": 134.86,
+          "total": 403.26
+        },
+        "ki": {
+          "cooling": 25.92,
+          "heating": 242.78,
+          "electrical": 113.47,
+          "total": 382.17
+        },
+        "ed": {
+          "cooling": 0.07,
+          "heating": 213.39,
+          "electrical": 156.16,
+          "total": 369.62
+        },
+        "ly": {
+          "cooling": 4.47,
+          "heating": 194.82,
+          "electrical": 82.08,
+          "total": 281.37
+        },
+        "ri": {
+          "cooling": 7.98,
+          "heating": 173.96,
+          "electrical": 97.71,
+          "total": 279.65
+        },
+        "cw": {
+          "cooling": 1.03,
+          "heating": 181.55,
+          "electrical": 79.03,
+          "total": 261.61
+        },
+        "gg": {
+          "cooling": 0.13,
+          "heating": 106.71,
+          "electrical": 50.33,
+          "total": 157.17
+        },
+        "cl": {
+          "cooling": 0.12,
+          "heating": 69.14,
+          "electrical": 73.16,
+          "total": 142.42
+        },
+        "cm": {
+          "cooling": 39.7,
+          "heating": 55.78,
+          "electrical": 38.66,
+          "total": 134.14
+        },
+        "li": {
+          "cooling": 0,
+          "heating": 71.87,
+          "electrical": 37.94,
+          "total": 109.81
+        },
+        "lu": {
+          "cooling": 0.33,
+          "heating": 108.73,
+          "electrical": 0,
+          "total": 109.06
+        }
+      },
+      "labels": [
+        "CK",
+        "AH",
+        "RC",
+        "LB",
+        "PAWA",
+        "KI",
+        "ED",
+        "LY",
+        "RI",
+        "CW",
+        "GG",
+        "CL",
+        "CM",
+        "LI",
+        "LU"
+      ]
+    }
+  },
+  "energy_intensity": {
+    "success": true,
+    "status": 200,
+    "data": {
+      "date": "Saturday February 15, 2025 - Saturday March 15, 2025",
+      "buildings": {
+        "ah": {
+          "value": 201.09
+        },
+        "gg": {
+          "value": 143.5
+        },
+        "lb": {
+          "value": 133.72
+        },
+        "ly": {
+          "value": 113
+        },
+        "ri": {
+          "value": 112.63
+        },
+        "rc": {
+          "value": 97.65
+        },
+        "ck": {
+          "value": 93.88
+        },
+        "li": {
+          "value": 82.4
+        },
+        "pawa": {
+          "value": 68.79
+        },
+        "ki": {
+          "value": 66.08
+        },
+        "ed": {
+          "value": 65.44
+        },
+        "cw": {
+          "value": 65.39
+        },
+        "lu": {
+          "value": 65.25
+        },
+        "cm": {
+          "value": 51.3
+        },
+        "cl": {
+          "value": 30.4
+        }
+      }
+    }
+  },
+  "todays_consumption": {
+    "success": true,
+    "status": 200,
+    "data": {
+      "weather": {
+        "date": "2025-03-15",
+        "low": "-17.01",
+        "high": "-16.01"
+      },
+      "date": "Saturday March 15, 2025 @ 4:38am",
+      "description": "<p class=\"tw-italic\">Data representing: Saturday March 15, 2025 @ 4:38am <span class=\"md:tw-float-right\">Recorded Low: -17&#176;C; Recorded High: -16&#176;C;</span></p>",
+      "buildings": {
+        "ah": {
+          "name": "Administration-Humanities",
+          "code": "ah",
+          "cooling": 0,
+          "heating": 7.95,
+          "electrical": 4.47,
+          "total": 12.4
+        },
+        "cm": {
+          "name": "Campion College",
+          "code": "cm",
+          "cooling": 0.21,
+          "heating": 2.18,
+          "electrical": 0.96,
+          "total": 3.4
+        },
+        "cl": {
+          "name": "Classroom Building",
+          "code": "cl",
+          "cooling": 0,
+          "heating": 0,
+          "electrical": 1.56,
+          "total": 1.6
+        },
+        "cw": {
+          "name": "College West",
+          "code": "cw",
+          "cooling": 0.04,
+          "heating": 5.77,
+          "electrical": 1.46,
+          "total": 7.3
+        },
+        "ed": {
+          "name": "Education Building",
+          "code": "ed",
+          "cooling": 0,
+          "heating": 7.16,
+          "electrical": 2.87,
+          "total": 10
+        },
+        "gg": {
+          "name": "Greenhouse Gas",
+          "code": "gg",
+          "cooling": 0,
+          "heating": 4.04,
+          "electrical": 1.07,
+          "total": 5.1
+        },
+        "ck": {
+          "name": " Kinesiology, Health & Sport",
+          "code": "ck",
+          "cooling": 0.38,
+          "heating": 14.74,
+          "electrical": 3.07,
+          "total": 18.2
+        },
+        "ki": {
+          "name": "K\u012b\u0161ik Towers",
+          "code": "ki",
+          "cooling": 0.83,
+          "heating": 11.39,
+          "electrical": 3.25,
+          "total": 15.5
+        },
+        "lb": {
+          "name": "Lab Building",
+          "code": "lb",
+          "cooling": 0.1,
+          "heating": 12.49,
+          "electrical": 3.14,
+          "total": 15.7
+        },
+        "li": {
+          "name": "La Cit\u00e9",
+          "code": "li",
+          "cooling": 0,
+          "heating": 1.65,
+          "electrical": 0.87,
+          "total": 2.5
+        },
+        "ly": {
+          "name": "Archer Library",
+          "code": "ly",
+          "cooling": 0.17,
+          "heating": 4.29,
+          "electrical": 0.57,
+          "total": 5
+        },
+        "lu": {
+          "name": "Luther College",
+          "code": "lu",
+          "cooling": 0,
+          "heating": 4.94,
+          "electrical": 0,
+          "total": 4.9
+        },
+        "pawa": {
+          "name": "Paskw\u0101w and Wakp\u00e1 Towers",
+          "code": "pawa",
+          "cooling": 0.38,
+          "heating": 10.63,
+          "electrical": 3.16,
+          "total": 14.2
+        },
+        "ri": {
+          "name": "Research and Innovation",
+          "code": "ri",
+          "cooling": 0,
+          "heating": 6.61,
+          "electrical": 2.52,
+          "total": 9.1
+        },
+        "rc": {
+          "name": "Riddell Centre",
+          "code": "rc",
+          "cooling": 0,
+          "heating": 8.91,
+          "electrical": 3.02,
+          "total": 11.9
+        }
+      }
+    }
+  },
+  "buildings": {
+    "ah": {
+      "consumption": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "heating": [
+            23.99,
+            60.78,
+            56.32,
+            51.08,
+            42.89,
+            58.11,
+            7.95
+          ],
+          "electrical": [
+            19.15,
+            31.1,
+            30.5,
+            29.67,
+            26.1,
+            29.72,
+            4.47
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      },
+      "greenhouse": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "heating": [
+            1.71,
+            4.32,
+            4,
+            3.63,
+            3.05,
+            4.13,
+            0.45
+          ],
+          "electrical": [
+            2.82,
+            4.58,
+            4.49,
+            4.37,
+            3.84,
+            4.38,
+            0.53
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      }
+    },
+    "ly": {
+      "consumption": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0.72,
+            0.85,
+            0,
+            0.99,
+            0.84,
+            0.89,
+            0.21
+          ],
+          "heating": [
+            26.29,
+            37.17,
+            32.03,
+            30.28,
+            28.43,
+            36.35,
+            5.27
+          ],
+          "electrical": [
+            12.16,
+            14,
+            13.97,
+            13.77,
+            13.66,
+            13.95,
+            0.68
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      },
+      "greenhouse": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0.03,
+            0.04,
+            0,
+            0.04,
+            0.04,
+            0.04,
+            0.01
+          ],
+          "heating": [
+            1.87,
+            2.64,
+            2.28,
+            2.15,
+            2.02,
+            2.58,
+            0.3
+          ],
+          "electrical": [
+            1.79,
+            2.06,
+            2.06,
+            2.03,
+            2.01,
+            2.05,
+            0.08
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      }
+    },
+    "ck": {
+      "consumption": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0.8,
+            3,
+            3.41,
+            3.57,
+            2.92,
+            2.63,
+            0.38
+          ],
+          "heating": [
+            63.75,
+            65.65,
+            67.77,
+            54.12,
+            44.77,
+            63.15,
+            14.74
+          ],
+          "electrical": [
+            26.54,
+            30.11,
+            29.99,
+            29.85,
+            29.58,
+            29.28,
+            3.07
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      },
+      "greenhouse": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0.03,
+            0.13,
+            0.15,
+            0.15,
+            0.13,
+            0.11,
+            0.01
+          ],
+          "heating": [
+            4.53,
+            4.67,
+            4.82,
+            3.85,
+            3.18,
+            4.49,
+            0.91
+          ],
+          "electrical": [
+            3.91,
+            4.43,
+            4.41,
+            4.4,
+            4.35,
+            4.31,
+            0.38
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      }
+    },
+    "cl": {
+      "consumption": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0,
+            0,
+            0.12,
+            0,
+            0,
+            0,
+            0
+          ],
+          "heating": [
+            0,
+            0,
+            0,
+            69.14,
+            0,
+            0,
+            0
+          ],
+          "electrical": [
+            8.76,
+            12.88,
+            12.67,
+            12.8,
+            12.62,
+            12.13,
+            1.56
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      },
+      "greenhouse": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0,
+            0,
+            0.01,
+            0,
+            0,
+            0,
+            0
+          ],
+          "heating": [
+            0,
+            0,
+            0,
+            4.92,
+            0,
+            0,
+            0
+          ],
+          "electrical": [
+            1.29,
+            1.9,
+            1.87,
+            1.88,
+            1.86,
+            1.79,
+            0.19
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      }
+    },
+    "cw": {
+      "consumption": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0.12,
+            0.2,
+            0.18,
+            0.19,
+            0.17,
+            0.13,
+            0.04
+          ],
+          "heating": [
+            17.1,
+            32.36,
+            33.2,
+            30.58,
+            28.57,
+            34.89,
+            5.77
+          ],
+          "electrical": [
+            8.15,
+            14.48,
+            13.38,
+            14.25,
+            14.17,
+            13.37,
+            1.46
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      },
+      "greenhouse": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0.01,
+            0
+          ],
+          "heating": [
+            1.22,
+            2.3,
+            2.36,
+            2.17,
+            2.03,
+            2.48,
+            0.35
+          ],
+          "electrical": [
+            1.2,
+            2.14,
+            1.98,
+            2.11,
+            2.09,
+            1.98,
+            0.18
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      }
+    },
+    "ed": {
+      "consumption": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0.04,
+            0,
+            0,
+            0.03,
+            0,
+            0,
+            0
+          ],
+          "heating": [
+            19.37,
+            40.08,
+            39.5,
+            36.4,
+            35.81,
+            36.33,
+            7.16
+          ],
+          "electrical": [
+            15.88,
+            28.21,
+            28.38,
+            27.96,
+            28.69,
+            24.71,
+            2.87
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      },
+      "greenhouse": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "heating": [
+            1.38,
+            2.85,
+            2.81,
+            2.59,
+            2.55,
+            2.58,
+            0.42
+          ],
+          "electrical": [
+            2.34,
+            4.15,
+            4.18,
+            4.12,
+            4.22,
+            3.64,
+            0.35
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      }
+    },
+    "gg": {
+      "consumption": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0.03,
+            0.03,
+            0.02,
+            0.05,
+            0,
+            0,
+            0
+          ],
+          "heating": [
+            13.31,
+            21.51,
+            19.65,
+            15.45,
+            14.68,
+            18.75,
+            4.04
+          ],
+          "electrical": [
+            7.54,
+            8.77,
+            8.67,
+            8.03,
+            7.69,
+            8.81,
+            1.07
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      },
+      "greenhouse": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "heating": [
+            0.95,
+            1.53,
+            1.4,
+            1.1,
+            1.04,
+            1.33,
+            0.24
+          ],
+          "electrical": [
+            1.11,
+            1.29,
+            1.28,
+            1.18,
+            1.13,
+            1.3,
+            0.12
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      }
+    },
+    "lb": {
+      "consumption": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0,
+            0.13,
+            0.1,
+            0.08,
+            0.11,
+            0.04,
+            0.1
+          ],
+          "heating": [
+            46.3,
+            65.87,
+            64.4,
+            0,
+            58.52,
+            66.76,
+            12.49
+          ],
+          "electrical": [
+            17.36,
+            19.48,
+            19.93,
+            19.83,
+            20.03,
+            19.35,
+            3.14
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      },
+      "greenhouse": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0,
+            0.01,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "heating": [
+            3.29,
+            4.68,
+            4.58,
+            0,
+            4.16,
+            4.75,
+            0.75
+          ],
+          "electrical": [
+            2.56,
+            2.87,
+            2.93,
+            2.92,
+            2.95,
+            2.85,
+            0.38
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      }
+    },
+    "li": {
+      "consumption": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "heating": [
+            8.69,
+            12.99,
+            11.68,
+            12.61,
+            12.03,
+            12.42,
+            1.65
+          ],
+          "electrical": [
+            4.54,
+            6.7,
+            6.64,
+            6.5,
+            6.49,
+            6.35,
+            0.87
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      },
+      "greenhouse": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "heating": [
+            0.62,
+            0.92,
+            0.83,
+            0.9,
+            0.86,
+            0.88,
+            0.1
+          ],
+          "electrical": [
+            0.67,
+            0.99,
+            0.98,
+            0.96,
+            0.96,
+            0.93,
+            0.11
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      }
+    },
+    "pawa": {
+      "consumption": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            1.92,
+            3.14,
+            3.21,
+            3.44,
+            2.78,
+            2.74,
+            0.46
+          ],
+          "heating": [
+            29.98,
+            46.13,
+            47.75,
+            34.97,
+            36.65,
+            44.67,
+            12.77
+          ],
+          "electrical": [
+            21.59,
+            22.15,
+            22.49,
+            22,
+            21.91,
+            21.57,
+            3.77
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      },
+      "greenhouse": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0.08,
+            0.14,
+            0.14,
+            0.15,
+            0.12,
+            0.12,
+            0.02
+          ],
+          "heating": [
+            2.13,
+            3.28,
+            3.4,
+            2.49,
+            2.61,
+            3.18,
+            0.76
+          ],
+          "electrical": [
+            3.18,
+            3.26,
+            3.31,
+            3.24,
+            3.23,
+            3.18,
+            0.47
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      }
+    },
+    "ri": {
+      "consumption": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            7.47,
+            0.51,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "heating": [
+            21.31,
+            35.03,
+            29.78,
+            26.88,
+            23.67,
+            31.52,
+            6.61
+          ],
+          "electrical": [
+            13.67,
+            16.37,
+            16.49,
+            16.28,
+            16.54,
+            16.27,
+            2.52
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      },
+      "greenhouse": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0.32,
+            0.02,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "heating": [
+            1.52,
+            2.49,
+            2.12,
+            1.91,
+            1.68,
+            2.24,
+            0.41
+          ],
+          "electrical": [
+            2.01,
+            2.41,
+            2.43,
+            2.4,
+            2.44,
+            2.4,
+            0.31
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      }
+    },
+    "rc": {
+      "consumption": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0.02,
+            0,
+            0,
+            0.01,
+            0,
+            0,
+            0
+          ],
+          "heating": [
+            35.8,
+            59.08,
+            56.91,
+            51.6,
+            46.84,
+            52.37,
+            8.91
+          ],
+          "electrical": [
+            19.13,
+            26.49,
+            26.91,
+            26.29,
+            26.1,
+            25.13,
+            3.02
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      },
+      "greenhouse": {
+        "success": true,
+        "status": 200,
+        "data": {
+          "date": "Sunday March 9, 2025 - Saturday March 15, 2025",
+          "labels": [
+            [
+              "Sunday",
+              "March 9",
+              "Low: 1\u00b0C",
+              "High: 2\u00b0C"
+            ],
+            [
+              "Monday",
+              "March 10",
+              "Low: -12\u00b0C",
+              "High: -12\u00b0C"
+            ],
+            [
+              "Tuesday",
+              "March 11",
+              "Low: -3\u00b0C",
+              "High: -3\u00b0C"
+            ],
+            [
+              "Wednesday",
+              "March 12",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Thursday",
+              "March 13",
+              "Low: -2\u00b0C",
+              "High: -2\u00b0C"
+            ],
+            [
+              "Friday",
+              "March 14",
+              "Low: -13\u00b0C",
+              "High: -13\u00b0C"
+            ],
+            [
+              "Saturday",
+              "March 15",
+              "Low: -17\u00b0C",
+              "High: -16\u00b0C"
+            ]
+          ],
+          "cooling": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "heating": [
+            2.55,
+            4.2,
+            4.05,
+            3.67,
+            3.33,
+            3.72,
+            0.53
+          ],
+          "electrical": [
+            2.82,
+            3.9,
+            3.96,
+            3.87,
+            3.84,
+            3.7,
+            0.37
+          ],
+          "weather": {
+            "2025-03-09": {
+              "low": "0.99",
+              "high": "1.99"
+            },
+            "2025-03-10": {
+              "low": "-12.01",
+              "high": "-12.01"
+            },
+            "2025-03-11": {
+              "low": "-3.01",
+              "high": "-2.76"
+            },
+            "2025-03-12": {
+              "low": "-2.23",
+              "high": "-1.94"
+            },
+            "2025-03-13": {
+              "low": "-2.23",
+              "high": "-1.65"
+            },
+            "2025-03-14": {
+              "low": "-13.34",
+              "high": "-12.94"
+            },
+            "2025-03-15": {
+              "low": "-17.01",
+              "high": "-16.01"
+            }
+          }
+        }
+      }
+    }
+  }
+}
