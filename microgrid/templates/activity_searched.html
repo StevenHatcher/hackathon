@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search by Activity
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <input type="button" id="button" value="Generate a PDF">
+        <div id="divID">
+            <table>
+                <caption>Activity: {{ chosen_activity }}</caption>
+                <tr>
+                    <th>Name</th>
+                    <th>Grade</th>
+                    <th>Total Points</th>
+                </tr>
+
+                {% for i in range(len_info) %}
+                    <tr>
+                        <td>{{ info[i]['name'] }}</td>
+                        <td>{{ info[i]['grade'] }}</td>
+                        <td>{{ info[i]['points'] }}</td>
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+{% endblock %}

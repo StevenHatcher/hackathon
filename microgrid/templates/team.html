@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block head %}
+    <style>
+        td {
+            text-align: left;
+            border-bottom: none;
+            padding-left: 15px;
+            padding-right: 15px;
+            vertical-align: top;
+        }
+    </style>
+{% endblock %}
+{% block title %}
+    Add a Group to Activity
+{% endblock %}
+
+{% block body %}
+    <form action="/team" method="post">
+        <table style="width:fit-content;">
+            <tr>
+                <td>
+                    <select name="activity" class="selectpicker form-control">
+                        <option value="" disabled selected>Activity</option>
+                        {% for activity in activities %}
+                            <option value="{{ activity }}">{{ activity }}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+                <td>
+                    <select name="year" id="year" class="selectpicker form-control">
+                        <option value="" disabled selected>Year</option>
+                        {% for year in years %}
+                            <option value="{{ year }}"> {{ year }}</option>
+                        {% endfor %}
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <label for="team">Add Group or Team (maximum of 30) in the format <b>Lastname, Firstname, grade</b>:</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <textarea id="team" name="team" rows="30" cols="100"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+{% endblock %}

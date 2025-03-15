@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search by Grade
+{% endblock %}
+
+{% block body %}
+    <div class="container">
+        <input id="button" type="button" value="Generate a PDF">
+        <div id="divID">
+            <h2>Grade {{ grade }}</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Total Points</th>
+                </tr>
+                {% for i in range(len_info) %}
+                    <tr>
+                        <td>{{ info[i]['student_name'] }}</td>
+                        <td>{{ points[i][0]['SUM(points)'] }}</td>
+                    </tr>
+                {% endfor %}
+        </table>
+        </div>
+    </div>
+{% endblock %}

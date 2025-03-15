@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Activity Search
+{% endblock %}
+
+{% block body %}
+    <form action="/activity_search" method="post">
+        <div>
+            <select name="select" class="selectpicker form-control">
+                <option value="" disabled selected>Activity</option>
+                {% for activity in activities %}
+                    <option value="{{ activity }}">{{ activity }}</option>
+                {% endfor %}
+            </select>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+{% endblock %}
