@@ -8,5 +8,7 @@ HOURS = 24
 # Source: https://apps.cer-rec.gc.ca/Conversion/conversion-tables.aspx
 # Units in Joules (watt-seconds)
 WATT = 1
-GIGAJOULE = 1e10^9
+GIGAJOULE = 1e9
 KWH = WATT * SECONDS * MINUTES * 1000
+GIGAJOULE_KWH = GIGAJOULE / KWH
+# print(GIGAJOULE_KWH)
