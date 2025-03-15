@@ -3,7 +3,7 @@
 SECONDS = 60
 MINUTES = 60
 HOURS = 24
-
+DAYS = 30
 
 # Source: https://apps.cer-rec.gc.ca/Conversion/conversion-tables.aspx
 # Units in Joules (watt-seconds)
@@ -22,20 +22,29 @@ lb_to_kg = 0.453592
 
 # solar panels
 SOLAR_SPECS = {
-    {"60 Cell": {"size": [3, 5.5], "energy KWH": 0.0399, "weight": 40, "cost": 1050}},
-    {"72 Cell": {"size": [3, 6.5], "energy KWH": 0.051, "weight": 50} "cost": 1305}}
+    "60 Cell": 
+     {"size": [3, 5.5], 
+      "energy KWH": 0.0399, 
+      "weight": 40, 
+      "cost": 1050},
+    "72 Cell": {"size": [3, 6.5],
+      "energy KWH": 0.051,
+      "weight": 50,
+      "cost": 1305}
 }
 
+sol_60 = SOLAR_SPECS["60 Cell"]["energy KWH"]
+print(SOLAR_SPECS)
 # Diesel Generators
 DIESEL_GENERATOR_SPECS = {
-    {"Small": {"size": [6.9,  3.94, 4.36], "energy KWH": 75, "litres per hour": 27, "cost": 62288}},
-    {"Medium": {"size": [15.4, 7.2, 7.9], "energy KWH": 375, "litres per hour": 105, "cost": 244230}},
-    {"Industrial": {"size": [16.8, 7.3, 9.8], "energy KWH": 825, "litres per hour": 105, "cost": 415910}}
+    "Small": {"size": [6.9,  3.94, 4.36], "energy KWH": 75, "litres per hour": 27, "cost": 62288},
+    "Medium": {"size": [15.4, 7.2, 7.9], "energy KWH": 375, "litres per hour": 105, "cost": 244230},
+    "Industrial": {"size": [16.8, 7.3, 9.8], "energy KWH": 825, "litres per hour": 105, "cost": 415910}
 }
 
 # Turbines
 WIND_SPECS = {
-    {"Small": {"size": [3.2, 3.2, 50], "energy KWH": 2.45, "cost": 64000}},
-    {"Medium": {"size": [3.2, 3.2, 60], "energy KWH": 4.11, "cost": 100000}},
-    {"Industrial": {"size": [14.8, 14.8, 180], "energy KWH": 800, "cost": 1860217}}
+    "Small": {"size": [3.2, 3.2, 50], "energy KWH": 2.45, "cost": 64000},
+    "Medium": {"size": [3.2, 3.2, 60], "energy KWH": 4.11, "cost": 100000},
+    "Industrial": {"size": [14.8, 14.8, 180], "energy KWH": 800, "cost": 1860217}
 }

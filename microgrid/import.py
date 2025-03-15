@@ -10,53 +10,42 @@ def init_db(db_url):
     """
     conn = sqlite3.connect(db_url)
     cursor = conn.cursor()
+    cursor.execute("DROP TABLE IF EXISTS calculations")
     cursor.execute(
-        """
-    CREATE TABLE IF NOT EXISTS #calculations (
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
-        total_KWH REAL NOT NULL DEFAULT 0,
-        monthly_savings REAL NOT NULL DEFAULT 0,
-        annual_savings REAL NOT NULL DEFAULT 0,
-        calculation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        """CREATE TABLE calculations( \\
+        id INTEGER PRIMARY KEY AUTOINCREMENT,\\
+        total_KWH REAL NOT NULL DEFAULT 0,\\
+        monthly_savings REAL NOT NULL DEFAULT 0,\\
+        annual_savings REAL NOT NULL DEFAULT 0,\\
+        calculation_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,)"""
     )
-    """
-    )
-
+    cursor.execute("DROP TABLE IF EXISTS devices_specs")
     cursor.execute(
-        """
-    CREATE TABLE IF NOT EXISTS devices_specs(
+        """CREATE TABLE devices_specs(
         devices_id INTEGER PRIMARY KEY AUTOINCREMENT,
         device_name TEXT,
         power_per_device REAL NOT NULL,
-        cost_per_device REAL NOT NULL,
+        cost_per_device REAL NOT NULL,)"""
     )
-    """
-    )
-
+    cursor.execute("DROP TABLE devices_specs")
     cursor.execute(
-        """
-    CREATE TABLE IF NOT EXISTS #device(
+        """CREATE TABLE device(
         device_id INTEGER PRIMARY KEY AUTOINCREMENT,
         solar_amount INTEGER NOT NULL DEFAULT 0,
         wind_amount INTEGER NOT NULL DEFAULT 0,
         generator INTEGER NOT NULL DEFAULT 0,
-        thermal BOOLEAN NOT NULL DEFAULT FALSE,
+        thermal BOOLEAN NOT NULL DEFAULT FALSE,)"""
     )
-    """
-    )
-
+    cursor.execute("DROP TABLE ur_buildings")
     cursor.execute(
-        """
-    CREATE TABLE IF NOT EXISTS ur_buildings(
+        """CREATE TABLE ur_buildings(
         building_id INTEGER PRIMARY KEY AUTOINCREMENT,
         building_name TEXT,
         cooling_avg REAL NOT NULL,
         heating_avg REAL NOT NULL,
         electrical_avg REAL NOT NULL,
         total_avg REAL NOT NULL,
-        total_kwh REAL NOT NULL,
-    )
-    """
+        total_kwh REAL NOT NULL,)"""
     )
 
     conn.commit()
@@ -139,6 +128,6 @@ def print_results(building_usage):
 if __name__ == "__main__":
     db_url = "microgrid.db"
     init_db(db_url)
-    csv_file_path = "uregina_dashboard/building_consumption.csv"
-    result = university_init_db(csv_file_path, db_url)
-    print_results(result)
+    # csv_file_path = "uregina_dashboard/building_consumption.csv"
+    # result = university_init_db(csv_file_path, db_url)
+    # print_results(result)

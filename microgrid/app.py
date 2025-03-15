@@ -3,24 +3,25 @@ import sqlite3
 import csv
 import io
 from datetime import datetime
-
+import constants
 app = Flask(__name__)
 
 # Constants
+
 COST_PER_KWH = 0.14705  # Cost per kWh in dollars
-AVG_PANEL_OUTPUT = 30  # Average monthly kWh output per panel
+AVG_PANEL_OUTPUT = constants.sol_60 * constants.DAYS * constants.HOURS # Average monthly kWh output per panel
 
 
 # Function to save calculation to database
-def save_calculation(monthly_kwh, panels_needed, monthly_savings, annual_savings):
+def save_calculation(monthly_kwh, monthly_savings, panels_needed, annual_savings):
     conn = sqlite3.connect("microgrid.db")
     cursor = conn.cursor()
     cursor.execute(
         """
-    INSERT INTO calculations (monthly_kwh, panels_needed, monthly_savings, annual_savings)
+    INSERT INTO calculations (total_kwh, monthly_savings, annual_savings, panels_needed)
     VALUES (?, ?, ?, ?)
     """,
-        (monthly_kwh, panels_needed, monthly_savings, annual_savings),
+        (monthly_kwh, monthly_savings, annual_savings, panels_needed),
     )
     conn.commit()
     conn.close()
@@ -31,7 +32,7 @@ def get_all_calculations():
     conn = sqlite3.connect("microgrid.db")
     conn.row_factory = sqlite3.Row
     cursor = conn.cursor()
-    cursor.execute("SELECT * FROM calculations ORDER BY calculation_date DESC")
+    cursor.execute("SELECT * FROM calculations")
     calculations = cursor.fetchall()
     conn.close()
     return calculations
