@@ -74,14 +74,14 @@ def calculate():
     buildings = university_init()
     try:
         monthly_kwh = request.form["monthly_kwh"]
-        building_choice = str(request.form["chooseBuilding"])
+        #building_choice = str(request.form["chooseBuilding"])
         if monthly_kwh is not None:
             monthly_kwh = float(monthly_kwh)
             if monthly_kwh < 0:
                 monthly_kwh = 0
-        if monthly_kwh is None:
-            if building_choice is not None:
-                monthly_kwh = buildings[building_choice]['electrical'] * constants.GIGAJOULE_KWH
+        #if monthly_kwh is None:
+            #if building_choice is not None:
+                #monthly_kwh = buildings[building_choice]['electrical'] * constants.GIGAJOULE_KWH
         
         results = calculate_solar_savings(monthly_kwh)
 
