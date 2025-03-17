@@ -11,7 +11,7 @@ app = Flask(__name__)
 # Constants
 
 COST_PER_KWH = 0.14705  # Cost per kWh in dollars
-AVG_PANEL_OUTPUT = constants.sol_60 * constants.DAYS * constants.HOURS # Average monthly kWh output per panel
+AVG_PANEL_OUTPUT = constants.sol_72 * constants.BILLING_PERIOD * constants.HOURS # Average monthly kWh output per panel
 
 
 # Function to save calculation to database
@@ -41,20 +41,52 @@ def get_all_calculations():
 
 
 # Function to calculate solar savings
-def calculate_solar_savings(monthly_kwh):
-    panels_needed = round(monthly_kwh / AVG_PANEL_OUTPUT)
+def calculate_solar_savings(monthly_kwh=None, selected_buildings=None, buildings_data=None):
+    """
+    Calculate solar savings based on either direct kWh input or selected buildings
+    
+    Parameters:
+    monthly_kwh (float): Direct input of monthly kWh usage
+    selected_buildings (list): List of selected building codes
+    buildings_data (dict): Dictionary of building energy data
+    
+    Returns:
+    dict: Dictionary with calculation results
+    """
+    # If selected buildings provided, calculate total kWh from buildings
+    total_kwh = monthly_kwh
+    
+    if selected_buildings and buildings_data:
+        # Calculate total kWh from selected buildings
+        total_kwh = 0
+        for building_code in selected_buildings:
+            if building_code in buildings_data:
+                # Sum up electrical usage for each building
+                building_electrical = 0
+                for energy_dict in buildings_data[building_code]:
+                    if 'electrical' in energy_dict:
+                        building_electrical += energy_dict['electrical']
+                
+                total_kwh += building_electrical
+    
+    # If no kWh value was provided or calculated, return error
+    if not total_kwh or total_kwh <= 0:
+        return None
+    
+    # Continue with regular calculations
+    panels_needed = round(total_kwh / AVG_PANEL_OUTPUT)
     if panels_needed < 1:
         panels_needed = 1
-
+    
     total_solar_output = panels_needed * AVG_PANEL_OUTPUT
-    if total_solar_output > monthly_kwh:
-        total_solar_output = monthly_kwh  # Can't save more than total usage
-
+    if total_solar_output > total_kwh:
+        total_solar_output = total_kwh  # Can't save more than total usage
+    
     monthly_savings = total_solar_output * COST_PER_KWH
     annual_savings = monthly_savings * 12
-
+    
     return {
-        "monthly_kwh": monthly_kwh,
+        "monthly_kwh": total_kwh,
         "panels_needed": panels_needed,
         "total_solar_output": total_solar_output,
         "monthly_savings": monthly_savings,
@@ -66,41 +98,63 @@ def calculate_solar_savings(monthly_kwh):
 @app.route("/")
 def index():
     buildings = university_init()
-    return render_template("index.html", panel_types=buildings)
+    return render_template("index.html", panel_options=buildings)
 
 
-@app.route("/calculate", methods=["POST"])
+@app.route('/calculate', methods=['POST'])
 def calculate():
-    buildings = university_init()
     try:
-        monthly_kwh = request.form["monthly_kwh"]
-        #building_choice = str(request.form["chooseBuilding"])
-        if monthly_kwh is not None:
-            monthly_kwh = float(monthly_kwh)
-            if monthly_kwh < 0:
-                monthly_kwh = 0
-        #if monthly_kwh is None:
-            #if building_choice is not None:
-                #monthly_kwh = buildings[building_choice]['electrical'] * constants.GIGAJOULE_KWH
+        # Get buildings data
+        buildings_data = university_init()
         
-        results = calculate_solar_savings(monthly_kwh)
-
+        # Check if user entered kWh directly
+        monthly_kwh = None
+        if 'monthly_kwh' in request.form and request.form['monthly_kwh']:
+            monthly_kwh = float(request.form['monthly_kwh'])
+        
+        # Get selected buildings
+        selected_buildings = request.form.getlist('selected_buildings')
+        
+        # If neither kWh nor buildings selected, show error
+        if not monthly_kwh and not selected_buildings:
+            flash('Please either enter monthly kWh usage or select at least one building.')
+            return redirect(url_for('index'))
+        
+        # Calculate total kWh from selected buildings
+        buildings_kwh = 0
+        if selected_buildings:
+            for building_code in selected_buildings:
+                if building_code in buildings_data:
+                    # Sum up electrical usage for the building
+                    for energy_dict in buildings_data[building_code]:
+                        if 'electrical' in energy_dict:
+                            buildings_kwh += energy_dict['electrical']
+        
+        # Use either direct input or calculated value
+        total_kwh = monthly_kwh if monthly_kwh else buildings_kwh
+        
+        # Calculate results using the total kWh
+        results = calculate_solar_savings(total_kwh)
+        
         # Save to database
         save_calculation(
-            results["monthly_kwh"],
-            results["panels_needed"],
-            results["monthly_savings"],
-            results["annual_savings"],
+            results['monthly_kwh'],
+            results['panels_needed'],
+            results['monthly_savings'],
+            results['annual_savings']
         )
         
-
-        return render_template(
-            "results.html", results=results, cost_per_kwh=COST_PER_KWH
-        )
-
-    except ValueError:
-        flash("Please enter a valid number for monthly kWh usage.")
-        return redirect(url_for("index"))
+        return render_template('results.html', 
+                             results=results, 
+                             cost_per_kwh=COST_PER_KWH, 
+                             selected_buildings=selected_buildings)
+    
+    except ValueError as e:
+        flash(f'Error: {str(e)}')
+        return redirect(url_for('index'))
+    except Exception as e:
+        flash(f'An unexpected error occurred: {str(e)}')
+        return redirect(url_for('index'))
 
 
 @app.route("/history")
@@ -188,9 +242,9 @@ def university_init():
                 # Using ast.literal_eval to safely convert string to list
                 values = ast.literal_eval(row[item])
 
-                # Calculate average value
+                # Calculate average value for a 30 day billing cycle
                 if values and len(values) > 0:
-                    avg_value = sum(values) / len(values)
+                    avg_value = (sum(values) / len(values))*constants.GIGAJOULE_KWH*constants.BILLING_PERIOD
                 else:
                     avg_value = 0
 

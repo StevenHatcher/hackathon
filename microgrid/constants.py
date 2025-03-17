@@ -3,8 +3,7 @@
 SECONDS = 60
 MINUTES = 60
 HOURS = 24
-DAYS = 30
-
+BILLING_PERIOD = 30
 # Source: https://apps.cer-rec.gc.ca/Conversion/conversion-tables.aspx
 # Units in Joules (watt-seconds)
 WATT = 1
@@ -33,7 +32,7 @@ SOLAR_SPECS = {
       "cost": 1305}
 }
 
-sol_60 = SOLAR_SPECS["60 Cell"]["energy KWH"]
+sol_72 = SOLAR_SPECS["72 Cell"]["energy KWH"]
 # print(SOLAR_SPECS)
 # Diesel Generators
 DIESEL_GENERATOR_SPECS = {
